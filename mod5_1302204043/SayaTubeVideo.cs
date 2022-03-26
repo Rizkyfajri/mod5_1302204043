@@ -37,7 +37,7 @@ namespace mod5_1302204043
 
         public void PrintVideoDetail()
         {
-            Console.WriteLine("ID: "+ID+" ,Judul: "+title+" ,Played: "+Playcount)
+            Console.WriteLine("ID: " + ID + " ,Judul: " + title + " ,Played: " + Playcount);
         }
     }
 }
