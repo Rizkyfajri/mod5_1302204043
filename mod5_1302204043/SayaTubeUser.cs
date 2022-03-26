@@ -8,5 +8,10 @@ namespace mod5_1302204043
 {
     internal class SayaTubeUser
     {
+        private string username;
+        private int ID;
+        List<SayaTubeVideo> UploadedVideos;
+
+
     }
 }
