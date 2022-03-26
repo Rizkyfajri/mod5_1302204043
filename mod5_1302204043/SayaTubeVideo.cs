@@ -22,7 +22,7 @@ namespace mod5_1302204043
         {
             try
             {
-                if(this.title != null && title.Length < 200)
+                if(this.title != null && title.Length < 200)//contract
                 {
                     this.title = title;
                     ID = rng.Next(digimin, digimax);
@@ -35,9 +35,14 @@ namespace mod5_1302204043
             }
         }
 
+        public void IncreasePlayCount()
+        {
+            Playcount = Playcount + 1;
+        }
+
         public void PrintVideoDetail()
         {
-            Console.WriteLine("ID: " + ID + " ,Judul: " + title + " ,Played: " + Playcount);
+            Console.WriteLine("ID: " + ID + " ,Judul: " + title + " ,Played: " + Playcount); //done
         }
     }
 }
