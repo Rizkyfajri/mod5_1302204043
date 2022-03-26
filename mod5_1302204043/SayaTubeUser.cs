@@ -12,8 +12,11 @@ namespace mod5_1302204043
         private int ID;
         List<SayaTubeVideo> UploadedVideos;
 
+
+
         public SayaTubeUser(string username)
         {
+            UploadedVideos = new List<SayaTubeVideo>();
             try
             {
                 if (this.username != null && username.Length < 200)//contract
@@ -27,9 +30,9 @@ namespace mod5_1302204043
             }
         }
 
-        public void AddVideo()
+        public void AddVideo(SayaTubeVideo Video)
         {
-
+            UploadedVideos.Add(Video);
         }
         public void GetTotalVideoPlaycount()
         {
